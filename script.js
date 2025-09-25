@@ -78,6 +78,16 @@ pilihan2.forEach(function (p) {
   }); // ✅ tutup eventListener
 }); // ✅ tutup forEach
 
+//mereset ulang score
+const resetButton = document.querySelector("#reset");
+resetButton.addEventListener("click", function () {
+  playerWinCount = 0;
+  computerWinCount = 0;
+  scorePlayer.innerHTML = "00";
+  scoreComputer.innerHTML = "00";
+  info.innerHTML = "SCORE TELAH DI RESET";
+});
+
 //   const pilihanPlayer = pGajah.className;
 //   const hasil = getHasil(pilihanComputer, pilihanPlayer);
 
